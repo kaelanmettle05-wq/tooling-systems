@@ -3,10 +3,10 @@ name: omg first yml workflow
 on:
   push:
     branches:
-      - main
+      - chore/commitlint
   pull_request:
     branches:
-      - main
+      - chore/commitlint
 
 jobs:
   hello:
