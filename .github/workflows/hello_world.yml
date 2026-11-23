@@ -1,0 +1,25 @@
+name: omg first yml workflow
+
+on:
+  push:
+    branches:
+      - chore/commitlint
+  pull_request:
+    branches:
+      - chore/commitlint
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: hello world
+        run: echo "Hello World"
+        shell: bash 
+
+  goodbye:
+    runs-on: ubuntu-latest
+    steps:
+      - name: goodbye world
+        run: echo "Goodbye World"
+        shell: bash
